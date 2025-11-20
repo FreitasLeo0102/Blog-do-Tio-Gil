@@ -1,0 +1,37 @@
+.card {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.card.ativo {
+    background-color: #7E95FF;
+    box-shadow: 0px 4px 15px 8px #001A9180;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 354px;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.cartaz img {
+    width: 220px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 8px #00000040;
+}
+
+.card .info-desenho {
+    display: block;        /* deixa existir sempre */
+    opacity: 0;            /* invisível */
+    visibility: hidden;    /* não interage */
+    transition: opacity 0.3s ease;
+}
+
+.card.ativo .info-desenho {
+    opacity: 1;
+    visibility: visible;
+}

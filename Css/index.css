@@ -1,0 +1,75 @@
+.qm-somos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto-qm-somos h2 {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 40px;
+    color: #090044;
+}
+
+.texto-qm-somos {
+    max-width: 50%;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    color: #090044;
+    text-align: justify;
+}
+
+.carrossel {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    background: #c3ccff;
+    padding: 50px 0;
+    border-radius: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide img {
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.25);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: #2f307f;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.7;
+}
+
+.prev {
+    left: 20px;
+    z-index: 1001;
+}
+
+.next {
+    right: 20px;
+    z-index: 1002;
+}

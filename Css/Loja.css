@@ -1,0 +1,15 @@
+.hero-texto {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    color: #090044;
+}
+
+.hero-texto span {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 21px;
+    color: #090044;
+}

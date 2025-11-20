@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #C9D3FF;
+}
+
+.perfil-sidebar {
+    background-color: #BFCBFF;
+    box-shadow: 0px -8px 15px -5px #001A914D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 250px;
+    padding: 1rem;
+    text-align: start;
+}
+
+.perfil-sidebar img {
+    width: 44px;
+    border-radius: 100%;
+}
+
+.perfil-sidebar div .nome-perfil {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    color: #000000;
+}
+
+.perfil-sidebar div .user-perfil {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: -5px;
+    color: #00000099;
+}
+
+#sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #C9D3FF;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform .3s ease;
+    transform: translateX(0); /* aberta */
+    overflow: hidden;
+    box-shadow: 0px 4px 15px 0px rgba(81, 112, 255, 0.35);
+    text-align: center;
+}
+
+nav img {
+    width: 10rem;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: solid 1px #5170FF;
+}
+
+.sidebar.recolhida {
+    transform: translateX(-100%);
+}
+
+#menu-hamburguer {
+    position: fixed;
+    top: 15rem;
+    left: 230px; 
+    z-index: 2000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: left .3s ease, top .3s ease;
+    background-color: #D9E0FF;
+    border-radius: 100%;
+    box-shadow: 0px 4px 15px 0px #5170FF59;
+}
+
+#menu-hamburguer img {
+    width: 40px;
+    padding: 5px;
+}
+
+body.sidebar-fechada #menu-hamburguer {
+    left: 20px;
+    top: 10px;
+}
+
+.todo-conteudo {
+    margin-left: 250px; 
+    transition: margin-left .3s ease;
+    background-color: #C9D3FF;
+    padding: 2rem 5rem;
+}
+
+body.sidebar-fechada .todo-conteudo {
+    margin-left: 0; 
+}
+
+.conteudo-sidebar {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header h1 {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 40px;
+    color: #090044;
+}
+
+header h2 {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 85px;
+    color: #090044;
+    max-width: 1300px;
+    border-top: solid 2px #5170FF;
+    border-bottom: solid 2px #5170FF;
+    margin-top: 2rem;
+}
