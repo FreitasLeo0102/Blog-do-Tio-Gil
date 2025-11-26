@@ -4,7 +4,7 @@
 }
 
 .texto-qm-somos h2 {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-weight: 700;
     font-size: 40px;
     color: #090044;
@@ -12,7 +12,7 @@
 
 .texto-qm-somos {
     max-width: 50%;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;;
     font-weight: 500;
     font-size: 20px;
     color: #090044;

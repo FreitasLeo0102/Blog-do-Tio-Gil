@@ -1,8 +1,9 @@
 .card {
-    transition: all 0.3s ease;
     display: inline-block;
+    transition: all 0.3s ease;
 }
 
+/* Card expandido no hover */
 .card.ativo {
     background-color: #7E95FF;
     box-shadow: 0px 4px 15px 8px #001A9180;
@@ -22,16 +23,32 @@
     height: 350px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px 8px #00000040;
+    transition: transform 0.3s ease;
 }
 
+.card.ativo .cartaz img {
+    transform: scale(1.02);
+}
+
+/* Info invisível mas com animação */
 .card .info-desenho {
-    display: block;        /* deixa existir sempre */
-    opacity: 0;            /* invisível */
-    visibility: hidden;    /* não interage */
+    opacity: 0;
+    visibility: hidden;
     transition: opacity 0.3s ease;
 }
 
+/* Info aparece quando o card ativa */
 .card.ativo .info-desenho {
     opacity: 1;
     visibility: visible;
+}
+
+/* Container */
+.categoria {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    overflow-x: hidden;
+    padding: 2rem;
 }

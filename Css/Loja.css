@@ -7,9 +7,9 @@
 }
 
 .hero-texto span {
-    font-family: Poppins;
+    font-family: "Poppins";
     font-weight: 600;
-    font-style: SemiBold;
+    font-style: "SemiBold";
     font-size: 21px;
     color: #090044;
 }

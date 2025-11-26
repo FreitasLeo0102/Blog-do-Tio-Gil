@@ -4,7 +4,7 @@ body {
     background-color: #C9D3FF;
 }
 
-.perfil-sidebar {
+.perfil-sidebar a {
     background-color: #BFCBFF;
     box-shadow: 0px -8px 15px -5px #001A914D;
     display: flex;
@@ -14,23 +14,24 @@ body {
     width: 250px;
     padding: 1rem;
     text-align: start;
+    text-decoration: none;
 }
 
-.perfil-sidebar img {
+.perfil-sidebar a img {
     width: 44px;
     border-radius: 100%;
 }
 
-.perfil-sidebar div .nome-perfil {
-    font-family: Poppins;
+.perfil-sidebar a div .nome-perfil {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 20px;
     margin: 0;
     color: #000000;
 }
 
-.perfil-sidebar div .user-perfil {
-    font-family: Poppins;
+.perfil-sidebar a div .user-perfil {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 15px;
     margin-top: -5px;
@@ -53,7 +54,7 @@ body {
     left: 0;
     z-index: 1000;
     transition: transform .3s ease;
-    transform: translateX(0); /* aberta */
+    transform: translateX(0); 
     overflow: hidden;
     box-shadow: 0px 4px 15px 0px rgba(81, 112, 255, 0.35);
     text-align: center;
@@ -112,14 +113,14 @@ body.sidebar-fechada .todo-conteudo {
 }
 
 header h1 {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-weight: 700;
     font-size: 40px;
     color: #090044;
 }
 
 header h2 {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-weight: 700;
     font-size: 85px;
     color: #090044;

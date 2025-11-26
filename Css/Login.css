@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cdd5ff;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container geral */
+.container-login {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.left-area {
+    flex: 1;
+    width: 50%;
+}
+
+.left-area h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #0d1b78;
+}
+
+.left-area h3 {
+    font-size: 45px;
+    color: #2843a1;
+}
+
+.left-area p {
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 30px;
+}
+
+.btn-criar {
+    padding: 0.9rem 2rem;
+    background-color: #6984FF;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-criar:hover {
+    background-color: #5b74e6;
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.right-area {
+    background-color: #e4e8ff;
+    padding: 2rem 2rem;
+    width: 400px;
+    min-height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.logo {
+    width: 175px;
+    margin-bottom: 2rem;
+}
+
+.form-login input {
+    width: 100%;
+    padding: 0.9rem;
+    margin: 0.7rem 0;
+    border-radius: 8px;
+    border: 2px solid #b8c4ff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-login input:focus {
+    border-color: #6f8cff;
+}
+
+.btn-entrar {
+    display: inline-block;
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #6984FF;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #5b74e6;
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.div-ou {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.div-ou hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color: #b8c4ff;
+}
+
+.div-ou span {
+    color: #6f6f6f;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 0.9rem;
+    border: 2px solid #b8c4ff;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.btn-google:hover {
+    background-color: #dfe5ff;
+}
+
+.google-icon {
+    width: 22px;
+}
