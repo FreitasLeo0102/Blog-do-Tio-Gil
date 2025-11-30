@@ -1,0 +1,148 @@
+.item-carrinho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background: #cdd6ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.produto-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-produto {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto-produto h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.texto-produto p {
+    font-size: 0.9rem;
+    margin: 5px 0 10px;
+}
+
+.remover {
+    background: transparent;
+    border: none;
+    color: #444;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.quantidade button {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background: #B1BFFF;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quantidade button:hover {
+    transform: scale(1.1);
+}
+
+.qtd {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.preco {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.btm-finalizar {
+    display: block;        
+    width: 250px;          
+    text-align: center;     
+    padding: 15px 0;       
+    background-color: #748DFF;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none; 
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2rem auto;    
+    box-shadow: 0px 4px 12px rgba(0, 26, 145, 0.25);
+    transition: 0.3s;
+}
+
+.btm-finalizar:hover {
+    background-color: #5c73ff;
+}
+
+@media (max-width: 768px) {
+    .item-carrinho {
+        grid-template-columns: 1fr; /* uma coluna só */
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .produto-info {
+        flex-direction: column; /* imagem em cima, texto embaixo */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .img-produto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .texto-produto h3 {
+        font-size: 1rem;
+    }
+
+    .texto-produto p {
+        font-size: 0.85rem;
+    }
+
+    .quantidade {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .quantidade button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.1rem;
+    }
+
+    .qtd {
+        font-size: 1.1rem;
+    }
+
+    .preco {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .btm-finalizar {
+        width: 90%;
+        font-size: 16px;
+        padding: 12px 0;
+    }
+}

@@ -146,3 +146,57 @@ body {
 .google-icon {
     width: 22px;
 }
+
+@media (max-width: 768px) {
+    .container-login {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .left-area {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-area h1 {
+        font-size: 45px;
+    }
+
+    .left-area h3 {
+        font-size: 28px;
+    }
+
+    .left-area p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .right-area {
+        width: 90%;
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .logo {
+        width: 140px;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-login input,
+    .btn-entrar,
+    .btn-google {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    .btn-criar {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .div-ou span {
+        font-size: 0.9rem;
+    }
+}

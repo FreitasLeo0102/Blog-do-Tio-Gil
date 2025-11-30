@@ -8,7 +8,7 @@ function desativarCard(card) {
 
 function aplicarEventosCards() {
   const cards = document.querySelectorAll('.card')
-  
+
   cards.forEach(card => {
     const img = card.querySelector('.cartaz img')
 

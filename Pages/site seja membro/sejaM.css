@@ -1,0 +1,258 @@
+.members-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-section {
+    width: 100%;
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 4rem;
+}
+
+.member-section h3 {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 32px;
+    color: #090044;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.member-card {
+    border-radius: 20px;
+    padding: 3rem;
+    max-width: 600px;
+    box-shadow: 0px 8px 25px rgba(81, 112, 255, 0.3);
+    box-sizing: border-box;
+    width: 100%;
+    color: #ffffff;
+}
+
+.member-card h4 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.member-card h4,
+.member-card .price,
+.member-card ul li {
+    color: #ffffff;
+}
+
+.member-card .price {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+}
+
+.member-card .price strong {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.member-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.member-card ul li {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.member-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.member-card.figurante {
+    background: linear-gradient(135deg, #6B7CFF 0%, #5170FF 100%);
+}
+
+.member-card.figurante ul li::before {
+    color: #E8EFFF;
+}
+
+.member-card.secundario {
+    background: linear-gradient(135deg, #5B6CFF 0%, #4160FF 100%);
+}
+
+.member-card.secundario ul li::before {
+    color: #D8DFFF;
+}
+
+.member-card.principal {
+    background: linear-gradient(135deg, #4B5CFF 0%, #3150FF 100%);
+}
+
+.member-card.principal ul li::before {
+    color: #C8CFFF;
+}
+
+.btn-member {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background-color: #2C52FF;
+    color: white;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btn-member:hover {
+    background-color: #0D0055;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px rgba(9, 0, 68, 0.4);
+}
+
+.btn-member:active {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 1024px) {
+    .member-section h3 {
+        font-size: 28px;
+    }
+
+    .member-card {
+        max-width: 100%;
+        padding: 2.5rem;
+    }
+
+    .member-card h4 {
+        font-size: 22px;
+    }
+
+    .intro-section p {
+        font-size: 15px;
+    }
+
+
+    @media (max-width: 768px) {
+        .member-section {
+            margin-bottom: 3rem;
+        }
+
+        .member-section h3 {
+            font-size: 22px;
+            margin-bottom: 1.5rem;
+        }
+
+        .member-card {
+            max-width: 100%;
+            padding: 1.5rem;
+            box-shadow: 0px 4px 15px rgba(81, 112, 255, 0.25);
+        }
+
+        .member-card h4 {
+            font-size: 18px;
+            margin: 0 0 0.8rem 0;
+        }
+
+        .member-card .price {
+            font-size: 15px;
+            margin: 0 0 1rem 0;
+        }
+
+        .member-card .price strong {
+            font-size: 16px;
+        }
+
+        .member-card ul li {
+            font-size: 14px;
+            margin: 0.6rem 0;
+            padding-left: 1.3rem;
+        }
+
+        .member-card ul li::before {
+            font-size: 16px;
+        }
+
+        .btn-member {
+            padding: 0.9rem;
+            font-size: 15px;
+            margin-top: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .member-section {
+            margin-bottom: 2rem;
+        }
+
+        .member-section h3 {
+            font-size: 18px;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .member-card {
+            max-width: 100%;
+            padding: 1.2rem;
+            border-radius: 15px;
+            box-shadow: 0px 2px 10px rgba(81, 112, 255, 0.2);
+        }
+
+        .member-card h4 {
+            font-size: 16px;
+            margin: 0 0 0.6rem 0;
+        }
+
+        .member-card .price {
+            font-size: 13px;
+            margin: 0 0 0.8rem 0;
+        }
+
+        .member-card .price strong {
+            font-size: 14px;
+        }
+
+        .member-card ul {
+            margin: 1rem 0;
+        }
+
+        .member-card ul li {
+            font-size: 12px;
+            margin: 0.5rem 0;
+            padding-left: 1.2rem;
+        }
+
+        .member-card ul li::before {
+            font-size: 14px;
+        }
+
+        .btn-member {
+            padding: 0.8rem;
+            font-size: 14px;
+            margin-top: 0.8rem;
+            font-weight: 600;
+        }
+    }
+}

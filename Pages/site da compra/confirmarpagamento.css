@@ -1,0 +1,159 @@
+.form-container {
+    max-width: 1100px;
+    margin: 2rem auto 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.card {
+    background: #B1BFFF;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dados-pessoais {
+    grid-column: 1 / 2;
+}
+
+.endereco {
+    grid-column: 1 / 2;
+}
+
+.pagamento {
+    grid-column: 1 / 2;
+}
+
+h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #BFCBFF;
+    background: #F0F3FF;
+    box-sizing: border-box;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-ddi-tel {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.grid-ddi-tel-cpf {
+    display: grid;
+    grid-template-columns: auto 2fr 2fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.label-ddi {
+    max-width: 80px;
+}
+
+.metodos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.metodos li {
+    margin-bottom: 0.6rem;
+}
+
+.metodo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+    background: #D9E0FF;
+    border: 1px solid #BFCBFF;
+}
+
+.metodo input {
+    margin-right: 6px;
+}
+
+.metodo .icone {
+    font-size: 22px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 6px;
+}
+
+.metodo strong {
+    display: block;
+}
+
+.valor {
+    color: #09004499;
+    font-size: 14px;
+}
+
+.actions {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.btn-confirm {
+    background: #6170FF;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(81, 112, 255, 0.25);
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .form-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .pagamento {
+        order: 3;
+    }
+
+    .dados-pessoais,
+    .endereco {
+        order: 1;
+    }
+}

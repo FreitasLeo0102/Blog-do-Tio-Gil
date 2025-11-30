@@ -21,3 +21,12 @@ function alternarBody() {
 }
 
 inicializarSidebar()
+
+function aplicarEstadoInicialMobile() {
+    if (window.innerWidth <= 700) {
+        document.getElementById("sidebar").classList.add("recolhida")
+        document.body.classList.add("sidebar-fechada")
+    }
+}
+
+aplicarEstadoInicialMobile()

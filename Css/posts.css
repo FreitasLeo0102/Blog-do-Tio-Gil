@@ -133,3 +133,108 @@
     50%  { transform: scale(0.7); opacity: 0.4; }
     100% { transform: scale(1); opacity: 1; }
 }
+
+@media (max-width: 768px) {
+    .posts {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .post {
+        width: 95%;
+        min-height: auto;
+        margin: 1rem auto;
+        padding-bottom: 2rem;
+    }
+
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .perfil img {
+        width: 60px;
+    }
+
+    .perfil div .nome-posts {
+        font-size: 20px;
+    }
+
+    .perfil div .user-posts {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .conteudo-posts {
+        width: 95%;
+        text-align: justify;
+    }
+
+    .texto-conteudo-posts {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .img-conteudo-posts {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .tempo-conteudo-posts {
+        font-size: 16px;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 0.5rem;
+    }
+
+    /* Buttons lado a lado no mobile */
+    .btm-posts {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding-left: 0;
+    }
+
+    .btm-posts button {
+        width: 120px;
+        height: 40px;
+    }
+
+    .btm-posts button img {
+        width: 20px;
+    }
+
+    .btm-posts button p {
+        font-size: 14px;
+    }
+
+    carrossel {
+        padding: 30px 0;
+    }
+
+    .slide img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .prev, .next {
+        top: 50%; /* centraliza verticalmente */
+        transform: translateY(-50%);
+        font-size: 35px;
+        padding: 5px;
+    }
+
+    /* Ajuste extra se ainda estiver sobre a imagem */
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+}
