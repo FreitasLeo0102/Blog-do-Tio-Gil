@@ -6,16 +6,40 @@
     justify-content: center;
 }
 
+.titulo-linha {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 3px solid #5170FF59
+}
+
+.titulo-linha h3 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 28px;
+    color: #090044;
+
+    background-color: #CDD6FF;
+    padding-right: 12px;
+}
+
+
+
 .member-section {
     width: 100%;
-    max-width: 600px; 
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 4rem;
 }
 
-.member-section h3 {
+h3 {
     font-family: Playfair Display;
     font-weight: 700;
     font-size: 32px;
@@ -156,6 +180,11 @@
 
 
     @media (max-width: 768px) {
+
+        .titulo-linha {
+            border-bottom: none;
+        }
+
         .member-section {
             margin-bottom: 3rem;
         }

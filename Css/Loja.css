@@ -1,8 +1,8 @@
 .produtos-container {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .produtos {
@@ -16,25 +16,29 @@
     justify-content: flex-start;
     overflow: hidden;
     border-radius: 30px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        padding 0.3s ease,
+        transform 0.25s ease,
+        opacity 0.25s ease;
 }
 
 .produto-card.fechado {
-    background-color: transparent;
-    box-shadow: none;
-    padding: 0;
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
+.produto-card.aberto {
+    transform: scale(1);
+    opacity: 1;
+    background-color: #7E95FF;
 }
 
 .produto-card.fechado .produto-info {
     opacity: 0;
     transform: translateX(-10px);
     pointer-events: none;
-}
-
-.produto-card.aberto {
-    background-color: #7E95FF;
-    box-shadow: 0px 4px 15px 8px #001A9180;
-    padding: 15px 18px;
 }
 
 .produto-card.aberto .produto-info {
@@ -65,6 +69,7 @@
     width: 198px;
     background-color: #6984FF;
     border-radius: 5px;
+    text-align: center;
 }
 
 .produto-preco p {
@@ -82,6 +87,7 @@ h3 {
     text-transform: capitalize;
     margin-bottom: 20px;
 }
+
 .produto-img {
     position: relative;
     width: 260px;
@@ -139,6 +145,7 @@ h3 {
 
 .comprar-link {
     padding: 6px;
+    margin-bottom: 0.5rem;
     font-size: 12px;
     border: none;
     border-radius: 5px;
@@ -146,44 +153,134 @@ h3 {
     color: white;
 }
 
+.titulo-linha {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 3px solid #5170FF59;
+    margin-top: 5rem;
+}
+
+.titulo-linha h3 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 28px;
+    color: #090044;
+    background-color: #CDD6FF;
+    padding-right: 12px;
+}
+
+h3 {
+    font-family: Playfair Display;
+    ;
+    font-weight: 700;
+    font-size: 32px;
+    color: #090044;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
 @media (max-width: 768px) {
+
     .produtos-container {
-        flex-direction: column; 
-        gap: 75px;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 75px;
+        justify-content: center;
+        gap: 60px;
+        width: 100%;
+    }
+
+    .produtos {
+        margin-bottom: 25px;
+    }
+    .produto-img:hover .produto-tamanhos {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+    }
+
+    .produto-preco {
+        margin: 0 auto;
     }
 
     .produto-card {
-        flex-direction: column; 
-        width: 90%;
-        padding: 15px 18px !important; 
-        background-color: #7E95FF !important; 
-        box-shadow: 0px 4px 15px 8px #001A9180 !important;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 18px;
+        border-radius: 25px;
+        background-color: #7E95FF;
+        box-shadow: 0px 4px 15px 6px #001A9180;
+        transition: none
     }
 
     .produto-card .produto-info {
-        opacity: 1 !important; 
-        transform: translateX(0) !important;
+        opacity: 1 !important;
+        transform: none !important;
+        pointer-events: auto;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 100%;
     }
 
     .produto-img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .produto-img img {
         width: 100%;
         height: auto;
     }
 
     .produto-tamanhos {
         position: relative;
-        bottom: auto;
-        left: auto;
-        opacity: 1;
-        pointer-events: auto;
-        margin-top: 10px;
-        background-color: rgba(158, 175, 255, 0.6);
+        opacity: 1 !important;
+        margin: 20px auto 0;
+        width: auto;
+        max-width: 250px;
+        background-color: rgba(158, 175, 255, 0.55);
+        border-radius: 0;
+        padding: 12px;
+        box-sizing: border-box;
     }
 
     .produto-tamanhos div {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .produto-tamanhos button {
+        padding: 8px;
+        margin-right: 0.25rem;
+        font-size: 13px;
+        border-radius: 6px;
+        min-width: 70px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .comprar-link {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .produto-card.fechado {
+        opacity: 1;
+    }
+
+    .produto-card.aberto {
+        opacity: 1;
     }
 }
