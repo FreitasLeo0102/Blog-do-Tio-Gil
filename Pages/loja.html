@@ -273,6 +273,25 @@
 
     <script src="../JavaScript/Index/SideBar.js"></script>
     <script src="../JavaScript/Index/loja.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Seleciona todos os containers de botões
+            const containers = document.querySelectorAll('.produto-tamanhos > div');
+
+            containers.forEach(container => {
+                container.addEventListener('click', function (e) {
+                    const btn = e.target.closest('button');
+                    if (!btn) return;
+
+                    // Remove a classe de todos os botões do container atual
+                    container.querySelectorAll('button').forEach(b => b.classList.remove('selected'));
+                    // Adiciona a classe ao botão clicado
+                    btn.classList.add('selected');
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

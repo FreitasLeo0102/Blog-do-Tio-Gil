@@ -105,10 +105,10 @@ h3 {
 
 .produto-tamanhos {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.75rem;
     left: 1rem;
-    border-radius: 2px;
-    max-width: 100%;
+    border-radius: 20px;
+    max-width: 229px;
     background-color: rgba(158, 175, 255, 0.6);
     padding: 10px;
     box-sizing: border-box;
@@ -143,7 +143,25 @@ h3 {
     border-radius: 5px;
     background: #7E95FF;
     color: white;
+    z-index: 1000;
+    cursor: pointer;
 }
+
+.produto-tamanhos button {
+  border: 2px solid transparent;
+  transition: border-color 0.15s ease, transform 0.08s ease;
+}
+
+.produto-tamanhos button.selected {
+  border-color: #2C52FF;
+  transform: translateY(-1px);
+}
+
+.produto-tamanhos button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(44,82,255,0.12);
+  outline: none;
+}
+
 
 .comprar-link {
     padding: 6px;
