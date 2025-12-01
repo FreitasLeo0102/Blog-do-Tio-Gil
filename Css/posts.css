@@ -221,8 +221,13 @@
         text-align: center;
     }
 
+    .like-btn {
+        position: relative;
+    }
+
     .btm-posts .like-btn p {
-       display: none;
+       position: absolute;
+       bottom: -40px;
     }
 
     .btm-posts button {
