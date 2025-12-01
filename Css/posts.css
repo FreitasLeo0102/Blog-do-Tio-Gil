@@ -191,7 +191,6 @@
         margin-top: 0.5rem;
     }
 
-    /* Buttons lado a lado no mobile */
     .btm-posts {
         flex-direction: row;
         justify-content: center;
@@ -200,8 +199,10 @@
     }
 
     .btm-posts button {
-        width: 120px;
+        width: 100px;
         height: 40px;
+        padding: 0 0.5rem;
+        margin: 0.5rem;
     }
 
     .btm-posts button img {
@@ -223,13 +224,12 @@
     }
 
     .prev, .next {
-        top: 50%; /* centraliza verticalmente */
+        top: 50%;
         transform: translateY(-50%);
         font-size: 35px;
         padding: 5px;
     }
 
-    /* Ajuste extra se ainda estiver sobre a imagem */
     .prev {
         left: 10px;
     }

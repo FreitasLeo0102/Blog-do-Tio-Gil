@@ -183,7 +183,7 @@ header h2 {
 }
 
 footer {
-    background-color: transparent;
+    background: #c3ccff;
     color: #090044;
     font-size: large;
     padding: 2rem 5rem;
@@ -306,8 +306,8 @@ body.sidebar-fechada footer {
 
     .perfil-sidebar a {
         width: 100%;
-        max-width: 300px;
-        padding: 0.7rem;
+        width: 500px;
+        padding: 0.7rem 0;
         gap: 0.6rem;
         box-shadow: none;
         border-radius: 12px;
