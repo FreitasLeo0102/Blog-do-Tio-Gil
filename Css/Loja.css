@@ -2,7 +2,7 @@
     display: flex;
     gap: 40px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .produtos {
@@ -74,6 +74,14 @@
     color: #FFFFFF;
 }
 
+h3 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
 .produto-img {
     position: relative;
     width: 260px;
@@ -129,8 +137,53 @@
     color: white;
 }
 
-.produto-tamanhos button:last-child {
-    grid-column: 1 / 4;
-    justify-self: center;
-    width: 80%;
+.comprar-link {
+    padding: 6px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #2C52FF;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .produtos-container {
+        flex-direction: column; 
+        gap: 75px;
+        align-items: center;
+        margin-bottom: 75px;
+    }
+
+    .produto-card {
+        flex-direction: column; 
+        width: 90%;
+        padding: 15px 18px !important; 
+        background-color: #7E95FF !important; 
+        box-shadow: 0px 4px 15px 8px #001A9180 !important;
+    }
+
+    .produto-card .produto-info {
+        opacity: 1 !important; 
+        transform: translateX(0) !important;
+    }
+
+    .produto-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .produto-tamanhos {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        opacity: 1;
+        pointer-events: auto;
+        margin-top: 10px;
+        background-color: rgba(158, 175, 255, 0.6);
+    }
+
+    .produto-tamanhos div {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
 }
