@@ -1,0 +1,116 @@
+body {
+    background-color: #D2ADFF;
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.hero {
+    background-color: #aa6ff3;
+    color: white;
+    padding: 6rem 1.5rem 4rem;
+}
+
+.hero .logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.hero .title {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero .subtitle {
+    opacity: 0.9;
+}
+
+strong {
+    color: #420055;
+}
+
+
+.section-title {
+    color: #420055;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+
+.dev-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.dev-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.dev-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.dev-card h3 {
+    color: #420055;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 6px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.button.is-purple {
+    background-color: #9d57f3;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.button.is-purple:hover {
+    background-color: #7707ff;
+}
+
+
+.section-devs {
+    background-color: #E0BAFF;
+}
+
+
+footer {
+    background-color: #aa6ff3;
+    color: white;
+    padding: 2rem 1.5rem;
+}
+
+.button.is-green {
+    background-color: #5f08a7;
+    align-self: center;
+    display: flex;
+}
