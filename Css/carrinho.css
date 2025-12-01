@@ -96,13 +96,13 @@
 
 @media (max-width: 768px) {
     .item-carrinho {
-        grid-template-columns: 1fr; /* uma coluna só */
+        grid-template-columns: 1fr; 
         padding: 15px;
         gap: 15px;
     }
 
     .produto-info {
-        flex-direction: column; /* imagem em cima, texto embaixo */
+        flex-direction: column; 
         align-items: flex-start;
         gap: 10px;
     }

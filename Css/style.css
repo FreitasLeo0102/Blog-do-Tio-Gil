@@ -194,9 +194,16 @@ footer {
     transition: margin-left 0.3s ease, width 0.3s ease;
 
     a {
-        color: palevioletred;
         text-decoration: none;
+        font-weight: bold;
+        font-weight: bold;
+        color: #f591a0;
     }
+}
+
+.icon-contato {
+    width: 50px;
+    margin-left: 10px;
 }
 
 body.sidebar-fechada footer {
@@ -215,22 +222,13 @@ body.sidebar-fechada footer {
     width: 100px;
 }
 
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
 
 @media (max-width: 700px) {
-
-    footer {
-        width: 100%;
-        margin-left: 0;
-        padding: 2rem 2rem;
-        text-align: center;
-        transition: none;
-    }
-
-    .footer-conteudo {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
 
     .sidebar {
         width: 100%;
@@ -239,6 +237,8 @@ body.sidebar-fechada footer {
         left: 0;
         top: 0;
         padding-bottom: 1rem;
+        box-shadow: 0px 4px 15px 0px rgba(81, 112, 255, 0.35);
+        transition: transform .3s ease;
     }
 
     .sidebar.recolhida {
@@ -263,25 +263,24 @@ body.sidebar-fechada footer {
     .todo-conteudo {
         margin-left: 0 !important;
         padding: 5rem 2rem 2rem 2rem;
-        transition: padding-top .3s ease;
+        transition: none;
+    }
+
+    .conteudo-sidebar {
+        flex-direction: column;
     }
 
     #menu-hamburguer {
-        position: fixed;
-        top: 15px !important;
         left: 15px !important;
+        top: 15px !important;
         background-color: #D9E0FF;
         border-radius: 100%;
         box-shadow: 0px 4px 15px 0px #5170FF59;
     }
 
     body.sidebar-fechada #menu-hamburguer {
-        top: 15px !important;
         left: 15px !important;
-    }
-
-    .conteudo-sidebar {
-        flex-direction: column;
+        top: 15px !important;
     }
 
     header h1 {
@@ -292,7 +291,7 @@ body.sidebar-fechada footer {
     header h2 {
         font-size: 45px;
         margin-top: 1.2rem;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         text-align: center;
         border-width: 1px;
     }
@@ -305,8 +304,7 @@ body.sidebar-fechada footer {
     }
 
     .perfil-sidebar a {
-        width: 100%;
-        width: 500px;
+        width: 90%;
         padding: 0.7rem 0;
         gap: 0.6rem;
         box-shadow: none;
@@ -318,15 +316,29 @@ body.sidebar-fechada footer {
         width: 32px;
     }
 
-    .perfil-sidebar a div .nome-perfil {
+    .perfil-sidebar a .nome-perfil {
         font-size: 16px;
     }
 
-    .perfil-sidebar a div .user-perfil {
+    .perfil-sidebar a .user-perfil {
         font-size: 12px;
     }
 
-    nav a img {
+    nav img {
         width: 150px;
+    }
+
+    footer {
+        width: 100%;
+        margin-left: 0;
+        padding: 2rem;
+        text-align: center;
+        transition: none;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
     }
 }
