@@ -6,7 +6,7 @@ function desativarCard(card) {
   card.classList.remove('ativo')
 }
 
-function aplicarEventosCards() {
+function aplicarEventosDesktop() {
   const cards = document.querySelectorAll('.card')
 
   cards.forEach(card => {
@@ -17,8 +17,30 @@ function aplicarEventosCards() {
   })
 }
 
+function aplicarEventosMobile() {
+  const cards = document.querySelectorAll('.card')
+
+  cards.forEach(card => {
+    const img = card.querySelector('.cartaz img')
+
+    img.addEventListener('click', () => {
+      const jaAtivo = card.classList.contains('ativo')
+
+      cards.forEach(c => c.classList.remove('ativo'))
+
+      if (!jaAtivo) ativarCard(card)
+    })
+  })
+}
+
 function inicializarCards() {
-  aplicarEventosCards()
+  const isMobile = window.matchMedia("(max-width: 768px)").matches
+
+  if (isMobile) {
+    aplicarEventosMobile()
+  } else {
+    aplicarEventosDesktop()
+  }
 }
 
 inicializarCards()
