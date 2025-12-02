@@ -63,8 +63,8 @@ function getUserData() {
         tiogil: {
             nome: "TioGilGameplays",
             arroba: "@Tiotiogilgameplays123",
-            bio: "Sou Leo, estudante e apaixonado pelos universos das animações. Desde pequeno me perco nessas histórias, personagens e mundos que nunca deixam de me encantar.",
-            local: "Jacu - SP",
+            bio: "May the force be with you! ",
+            local: "Patrocínio - MG",
             seguindo: "5",
             seguidores: "502M",
             banner: "../IMG/Post-Perfil/Perfil/tiogil/banner-tiogil.png",
