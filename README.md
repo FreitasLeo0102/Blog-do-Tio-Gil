@@ -12,7 +12,7 @@ Criar um blog simples, funcional e responsivo, demonstrando domínio de estrutur
 - **Thiago** – Desenvolvimento  
 - **Talita** – Design  
 - **João Gabriel** – Design  
-- **Mariely** – Coordenação  
+- **Mariely** – Coordenação de equipe
 
 ## 🎨 Protótipo no Figma
 
