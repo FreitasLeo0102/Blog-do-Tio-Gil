@@ -26,17 +26,4 @@ Projeto desenvolvido **sem frameworks**, utilizando apenas:
 - **HTML5**  
 - **CSS3**  
 - **JavaScript**
-
-## 📁 Estrutura do Projeto
-
-/
-├── index.html
-├── paginas/
-│   └── ...
-├── CSS/
-│   └── style.css
-├── JavaScript/
-│   └── script.js
-└── IMG/
-    └── imagens, ícones e mídias
     
