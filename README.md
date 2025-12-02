@@ -11,7 +11,7 @@ Criar um blog simples, funcional e responsivo, demonstrando domínio de estrutur
 - **Leonardo** – Desenvolvimento  
 - **Thiago** – Desenvolvimento  
 - **Talita** – Design  
-- **João Gabriel** – Design  
+- **João Gabriel** – Diretoria de design  
 - **Mariely** – Coordenação de equipe
 
 ## 🎨 Protótipo no Figma
