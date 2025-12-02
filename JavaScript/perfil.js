@@ -20,7 +20,7 @@ function getUserData() {
             nome: "TALIgado",
             arroba: "@taliAescura",
             bio: "Gosto de coisas que fazem meu mundo ficar mais leve e mais meu: jogar vôlei, dormir como se fosse um esporte profissional e, acima de tudo, mulheres. Também sou apaixonada por desenhos como The Owl House e She-Ra, que misturam aventura, emoção e personagens fortes que me inspiram.",
-             local: "Ilhas Escaldadas-Reino Demoníaco",
+            local: "Ilhas Escaldadas-Reino Demoníaco",
             seguindo: "5",
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/tali/banner-tali.png",
@@ -31,7 +31,7 @@ function getUserData() {
             nome: "ManaMary",
             arroba: "@mary.mana",
             bio: "Sou a Mariely! Entre partidas de vôlei e decifrar segredos de Gravity Falls, gosto de recarregar as energias dormindo, ouvindo variadas músicas, comendo comidas gostosas e aproveitando boas bebidas. A vida é um mistério e Gravity Falls apenas revela o quanto ainda não entendemos.",
-             local: "Gravity Falls - Oregon",
+            local: "Gravity Falls - Oregon",
             seguindo: "5",
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/mary/banner-mary.png",
@@ -42,7 +42,7 @@ function getUserData() {
             nome: "Thigas",
             arroba: "@ThiaGodman",
             bio: "Sou basqueteiro, gamer e nas horas vagas estudante do if! :) E eu gosto MUITO de Hazbin Hotel",
-             local: "BitchCity-PQP, Inferno",
+            local: "BitchCity-PQP, Inferno",
             seguindo: "5",
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/thiago/banner-thiago.png",
@@ -53,11 +53,22 @@ function getUserData() {
             nome: "LeoLeo",
             arroba: "@B3_Leo",
             bio: "Sou Leo, estudante e apaixonado pelos universos das animações. Desde pequeno me perco nessas histórias, personagens e mundos que nunca deixam de me encantar.",
-             local: "Jacu - SP",
+            local: "Jacu - SP",
             seguindo: "5",
             seguidores: "501M",
             banner: "../IMG/Post-Perfil/Perfil/leo/banner-leo.png",
             pfp: "../IMG/Post-Perfil/Perfil/leo/fotoperfi-leo.png"
+        },
+
+        tiogil: {
+            nome: "TioGilGameplays",
+            arroba: "@Tiotiogilgameplays123",
+            bio: "Sou Leo, estudante e apaixonado pelos universos das animações. Desde pequeno me perco nessas histórias, personagens e mundos que nunca deixam de me encantar.",
+            local: "Jacu - SP",
+            seguindo: "5",
+            seguidores: "502M",
+            banner: "../IMG/Post-Perfil/Perfil/tiogil/banner-tiogil.png",
+            pfp: "../IMG/Post-Perfil/Perfil/tiogil/fotoperfil-tiogil.png"
         }
     };
 }

@@ -33,6 +33,12 @@
     border-radius: 100%;
 }
 
+.perfil div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .perfil div .nome-posts {
     font-family: "Poppins", sans-serif;
     ;
@@ -46,7 +52,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    margin-top: -5px;
+    margin: 0;
     color: #00000099;
 }
 
@@ -221,16 +227,15 @@
 
     .btm-posts button {
         text-align: center;
-    }
-
-    .like-btn {
         position: relative;
     }
 
-    .btm-posts .like-btn p {
+    .btm-posts button p {
        position: absolute;
-       bottom: -40px;
+       bottom: -30px;
     }
+
+
 
     .btm-posts button {
         width: 40px;
