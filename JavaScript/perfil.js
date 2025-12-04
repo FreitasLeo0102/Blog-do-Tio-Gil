@@ -29,7 +29,7 @@ function getUserData() {
             banner: "../IMG/Post-Perfil/Perfil/tali/banner-tali.png",
             pfp: "../IMG/Post-Perfil/Perfil/tali/fotoperfil-tali.png",
             post: "Saindo um pouco do foco de Lumity, esse último episódio de The Owl House dói até a alma. Foi nele que percebi, de verdade, que a série havia terminado e que não teríamos mais uma nova temporada. Nunca mais veremos todos eles juntos novamente 😭💔",
-            img: "../IMG/Post-Perfil/WhatsApp Image 2025-12-04 at 11.57.11"
+            img: "../IMG/Post-Perfil/WhatsApp Image 2025-12-04 at 11.57.11.jpeg"
 
         },
 
@@ -117,6 +117,7 @@ function main() {
 }
 
 main();
+
 
 
 
