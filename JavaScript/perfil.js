@@ -13,7 +13,10 @@ function getUserData() {
             seguindo: "5",
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/big/banner-big.png",
-            pfp: "../IMG/Post-Perfil/Perfil/big/fotopefil-big.png"
+            pfp: "../IMG/Post-Perfil/Perfil/big/fotopefil-big.png",
+            post: "Amo como a Rebeca Sugar trata cada coisa com muito cuidado em Steven Universo, como quando a comunidade tratava a rubi como masculina demais, ela a retratou com um vestido em seu casamento, enquanto safira que era vista como mais feminina, foi retratada utilizando um terno, e quando se fundiram, formando a Garnet, suas roupas ficavam mescladas, quase como uma roupa agênero, quebrando os estigmas heteronormativos do fandom. Rebeca foi muito sensivel e acolhedora, arriscando o destino de sua animação em troca de retratar um relacionamento LGBT em sua mais pura e enxuta essência, com defeitos, qualidades, preconceitos e aceitações.z",
+            img: "../IMG/Post-Perfil/WhatsApp Image 2025-12-03 at 19.20.12.jpeg"
+
         },
 
         talita: {
@@ -24,7 +27,9 @@ function getUserData() {
             seguindo: "5",
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/tali/banner-tali.png",
-            pfp: "../IMG/Post-Perfil/Perfil/tali/fotoperfil-tali.png"
+            pfp: "../IMG/Post-Perfil/Perfil/tali/fotoperfil-tali.png",
+            post: ""
+
         },
 
         mary: {
@@ -35,7 +40,9 @@ function getUserData() {
             seguindo: "5",
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/mary/banner-mary.png",
-            pfp: "../IMG/Post-Perfil/Perfil/mary/fotoperfil-mary.png"
+            pfp: "../IMG/Post-Perfil/Perfil/mary/fotoperfil-mary.png",
+            post: ""
+
         },
 
         thiago: {
@@ -46,7 +53,9 @@ function getUserData() {
             seguindo: "5",
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/thiago/banner-thiago.png",
-            pfp: "../IMG/Post-Perfil/Perfil/thiago/fotoperfil-thiago.png"
+            pfp: "../IMG/Post-Perfil/Perfil/thiago/fotoperfil-thiago.png",
+            post: ""
+
         },
 
         leo: {
@@ -57,7 +66,9 @@ function getUserData() {
             seguindo: "5",
             seguidores: "501M",
             banner: "../IMG/Post-Perfil/Perfil/leo/banner-leo.png",
-            pfp: "../IMG/Post-Perfil/Perfil/leo/fotoperfi-leo.png"
+            pfp: "../IMG/Post-Perfil/Perfil/leo/fotoperfi-leo.png",
+            post: "Sempre q eu lembro q Inside Job foi cancelada meu dia fica pior, nunca vou perodar a Netflix por isso"
+
         },
 
         tiogil: {
@@ -68,20 +79,27 @@ function getUserData() {
             seguindo: "5",
             seguidores: "502M",
             banner: "../IMG/Post-Perfil/Perfil/tiogil/banner-tiogil.png",
-            pfp: "../IMG/Post-Perfil/Perfil/tiogil/fotoperfil-tiogil.png"
+            pfp: "../IMG/Post-Perfil/Perfil/tiogil/fotoperfil-tiogil.png",
+            post: ""
         }
     };
 }
 
 function renderProfile(userData) {
     document.getElementById("nome").textContent = userData.nome;
+    document.getElementById("nome-post").textContent = userData.nome;
     document.getElementById("arroba").textContent = userData.arroba;
+    document.getElementById("arroba-post").textContent = userData.arroba;
     document.getElementById("bio").textContent = userData.bio;
     document.getElementById("local").textContent = userData.local;
     document.getElementById("seguindo").textContent = userData.seguindo;
     document.getElementById("seguidores").textContent = userData.seguidores;
+    document.getElementById("conteudo-post").textContent = userData.post;
+    document.getElementById("img-post").src = userData.img;
     document.getElementById("banner").src = userData.banner;
     document.getElementById("pfp").src = userData.pfp;
+    document.getElementById("pfp-post").src = userData.pfp;
+
 }
 
 function main() {

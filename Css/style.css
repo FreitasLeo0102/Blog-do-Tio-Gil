@@ -51,6 +51,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-flow: column nowrap;
+    z-index: 1500;
 }
 
 .sidebar {

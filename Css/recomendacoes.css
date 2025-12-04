@@ -4,6 +4,11 @@
     overflow-x: hidden;
 }
 
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 .categoria {
     display: flex;
     gap: 1rem;
