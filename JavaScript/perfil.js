@@ -54,7 +54,8 @@ function getUserData() {
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/thiago/banner-thiago.png",
             pfp: "../IMG/Post-Perfil/Perfil/thiago/fotoperfil-thiago.png",
-            post: ""
+            post: "A forma que o alastor enganou o vox foi cinema",
+            img: "../IMG/Post-Perfil/"
 
         },
 
@@ -80,7 +81,7 @@ function getUserData() {
             seguidores: "502M",
             banner: "../IMG/Post-Perfil/Perfil/tiogil/banner-tiogil.png",
             pfp: "../IMG/Post-Perfil/Perfil/tiogil/fotoperfil-tiogil.png",
-            post: ""
+            post: "Hj tenho aula no 2 TINF... Alguém me socorre."
         }
     };
 }
@@ -115,3 +116,4 @@ function main() {
 }
 
 main();
+
