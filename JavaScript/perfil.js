@@ -55,7 +55,7 @@ function getUserData() {
             banner: "../IMG/Post-Perfil/Perfil/thiago/banner-thiago.png",
             pfp: "../IMG/Post-Perfil/Perfil/thiago/fotoperfil-thiago.png",
             post: "A forma que o alastor enganou o vox foi cinema, quando o personagem é bom não tem como",
-            img: "../IMG/Post-Perfil/"
+            img: "../IMG/Post-Perfil/WhatsApp Image 2025-12-04 at 09.30.32.jpeg"
 
         },
 
@@ -116,5 +116,6 @@ function main() {
 }
 
 main();
+
 
 
