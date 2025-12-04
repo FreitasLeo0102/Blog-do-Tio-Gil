@@ -14,7 +14,7 @@ function getUserData() {
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/big/banner-big.png",
             pfp: "../IMG/Post-Perfil/Perfil/big/fotopefil-big.png",
-            post: "Amo como a Rebeca Sugar trata cada coisa com muito cuidado em Steven Universo, como quando a comunidade tratava a rubi como masculina demais, ela a retratou com um vestido em seu casamento, enquanto safira que era vista como mais feminina, foi retratada utilizando um terno, e quando se fundiram, formando a Garnet, suas roupas ficavam mescladas, quase como uma roupa agênero, quebrando os estigmas heteronormativos do fandom. Rebeca foi muito sensivel e acolhedora, arriscando o destino de sua animação em troca de retratar um relacionamento LGBT em sua mais pura e enxuta essência, com defeitos, qualidades, preconceitos e aceitações.z",
+            post: "Amo como a Rebeca Sugar trata cada coisa com muito cuidado em Steven Universo, como quando a comunidade tratava a rubi como masculina demais, ela a retratou com um vestido em seu casamento, enquanto safira que era vista como mais feminina, foi retratada utilizando um terno, e quando se fundiram, formando a Garnet, suas roupas ficavam mescladas, quase como uma roupa agênero, quebrando os estigmas heteronormativos do fandom. Rebeca foi muito sensivel e acolhedora, arriscando o destino de sua animação em troca de retratar um relacionamento LGBT em sua mais pura e enxuta essência, com defeitos, qualidades, preconceitos e aceitações",
             img: "../IMG/Post-Perfil/WhatsApp Image 2025-12-03 at 19.20.12.jpeg"
 
         },
@@ -54,7 +54,7 @@ function getUserData() {
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/thiago/banner-thiago.png",
             pfp: "../IMG/Post-Perfil/Perfil/thiago/fotoperfil-thiago.png",
-            post: "A forma que o alastor enganou o vox foi cinema",
+            post: "A forma que o alastor enganou o vox foi cinema, quando o personagem é bom não tem como",
             img: "../IMG/Post-Perfil/"
 
         },
@@ -116,4 +116,5 @@ function main() {
 }
 
 main();
+
 
