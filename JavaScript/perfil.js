@@ -41,7 +41,7 @@ function getUserData() {
             seguidores: "500M",
             banner: "../IMG/Post-Perfil/Perfil/mary/banner-mary.png",
             pfp: "../IMG/Post-Perfil/Perfil/mary/fotoperfil-mary.png",
-            post: ""
+            post: "Dipper e Mabel me ensinaram que a família é a maior aventura de todas. Do porco de estimação Waddles aos confrontos com Bill Cipher, cada episódio é pura nostalgia."
 
         },
 
@@ -116,6 +116,7 @@ function main() {
 }
 
 main();
+
 
 
 
